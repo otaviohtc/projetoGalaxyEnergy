@@ -44,7 +44,7 @@ button.addEventListener("click", () => {
         return
     }
     const text = encodeURIComponent(`Olá, sou ${name}, meu email é ${email}, ${description}`)
-    window.open(`https://api.whatsapp.com/send?phone=5519991796883&text=${text}`)
+    window.open(`https://api.whatsapp.com/send?phone=5519981202788&text=${text}`)
 })
 
 const navlinks = document.getElementById("navlinks");
