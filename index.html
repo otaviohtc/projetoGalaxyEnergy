@@ -34,6 +34,11 @@
                     <li><a href="#financiamento">FINANCIAMENTO</a></li>
                     <li><a href="#forms">ENTRE EM CONTATO</a></li>
                 </ul>
+                <a target="_blank" aria-label="Link para o chat do WhatsApp"
+                    href="https://api.whatsapp.com/send?phone=5519991796883&text=Olá, Galaxy Energy!"
+                    class="whats-button">
+                    <img src="images/whatsapp.svg" alt="WhatsApp">
+                </a>
             </div>
             <i class="fa fa-bars icone-custom" style="color: #ffffff;" onclick="showMenu()"></i>
         </nav>
@@ -214,6 +219,7 @@
             </div>
         </div>
     </section>
+
     <hr>
 
     <section class="financiamento" id="financiamento">
@@ -230,7 +236,7 @@
 
     <section class="bancos">
         <div class="parceiros">
-            <h1>Bancos Parceiros:</h1>
+            <h1>Bancos Parceiros</h1>
             <div class="parceiros-row">
                 <img src="parceiros/banco1.png" class="card-img-top" alt="Banco 1">
                 <img src="parceiros/banco2.png" class="card-img-top" alt="Banco 2">
@@ -252,20 +258,21 @@
             <form>
                 <div class="form-group mb-4">
                     <label for="nome">Nome:</label>
-                    <input type="text" class="form-control" id="nome" name="nome" required>
+                    <input type="text" class="form-control" id="nome" name="nome" required data-name-input>
                 </div>
 
                 <div class="form-group mb-4">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    <input type="email" class="form-control" id="email" name="email" required data-email-input>
                 </div>
 
                 <div class="form-group mb-4">
                     <label for="mensagem">Mensagem:</label>
-                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required
+                        data-description-input></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary mb-4">Enviar</button>
+                <button type="submit" class="btn btn-primary mb-4" data-submit-button>Enviar</button>
             </form>
         </div>
     </section>
@@ -273,19 +280,6 @@
     <footer>
         <p class="copyright">&copy; 2023 Galaxy Energy Solar. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        var navlinks = document.getElementById("navlinks");
-        function showMenu() {
-            navlinks.style.right = "0";
-
-        }
-        function hideMenu() {
-            navlinks.style.right = "-200px";
-
-        }
-    </script>
-
 </body>
 
 </html>
