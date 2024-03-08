@@ -40,11 +40,11 @@ button.addEventListener("click", () => {
         return
     }
     if (!description) {
-        alert("Preencha a descrição corretamente")
+        alert("Preencha a mensagem corretamente")
         return
     }
     const text = encodeURIComponent(`Olá, sou ${name}, meu email é ${email}, ${description}`)
-    window.open(`https://api.whatsapp.com/send?phone=5519981202788&text=${text}`)
+    window.open(`https://api.whatsapp.com/send?phone=551926603261&text=${text}`)
 })
 
 const navlinks = document.getElementById("navlinks");
