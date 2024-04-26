@@ -22,29 +22,41 @@ seletores.forEach((seletor) => {
 })
 
 const nameInput = document.querySelector("[data-name-input]")
-const emailInput = document.querySelector("[data-email-input]")
-const descriptionInput = document.querySelector("[data-description-input]")
+const telInput = document.querySelector("[data-tel-input]")
+const cityInput = document.querySelector("[data-city-input]")
+const contaInput = document.querySelector("[data-conta-input]")
+const telhadoInput = document.querySelector("[data-telhado-input]")
 const button = document.querySelector("[data-submit-button]")
 
 button.addEventListener("click", () => {
     const name = nameInput.value
-    const email = emailInput.value
-    const description = descriptionInput.value
+    const telefone = telInput.value
+    const cidade = cityInput.value
+    const conta = contaInput.value
+    const telhado = telhadoInput.value
 
     if (!name) {
         alert("Preencha o nome corretamente")
         return
     }
-    if (!email) {
-        alert("Preencha o email corretamente")
+    if (!telefone) {
+        alert("Preencha o telefone corretamente")
         return
     }
-    if (!description) {
+    if (!cidade) {
         alert("Preencha a mensagem corretamente")
         return
     }
-    const text = encodeURIComponent(`Olá, sou ${name}, meu email é ${email}, ${description}`)
-    window.open(`https://api.whatsapp.com/send?phone=551926603261&text=${text}`)
+    if (!conta) {
+        alert("Preencha a mensagem corretamente")
+        return
+    }
+    if (!telhado) {
+        alert("Preencha a mensagem corretamente")
+        return
+    }
+    const text = encodeURIComponent(`Olá, me chamo ${name}\nContato: ${telefone}\nMoro em: ${cidade}\nPago: R$${conta} em minha conta de energia\nMeu tipo de telhado é: ${telhado}`)
+    window.open(`https://api.whatsapp.com/send?phone=5519981382033&text=${text}`)
 })
 
 const navlinks = document.getElementById("navlinks");

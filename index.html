@@ -35,7 +35,7 @@
                     <li><a href="#forms">ENTRE EM CONTATO</a></li>
                 </ul>
                 <a target="_blank" aria-label="Link para o chat do WhatsApp"
-                    href="https://api.whatsapp.com/send?phone=551926603261&text=Olá, Galaxy Energy Solar!"
+                    href="https://api.whatsapp.com/send?phone=5519981382033&text=Olá, Galaxy Energy Solar!"
                     class="whats-button">
                     <img src="images/whatsapp.svg" alt="WhatsApp">
                 </a>
@@ -52,7 +52,8 @@
                     Distribuída.</strong> <br> é sua parceira confiável para soluções energéticas inteligentes.<br>
             </p>
             <a target="_blank" aria-label="Link para o chat do WhatsApp"
-                    href="https://api.whatsapp.com/send?phone=551926603261&text=Olá, Galaxy Energy Solar!" class="hero-btn">Saiba
+                href="https://api.whatsapp.com/send?phone=5519981382033&text=Olá, Galaxy Energy Solar!"
+                class="hero-btn">Saiba
                 Mais</a>
         </div>
     </section>
@@ -264,14 +265,29 @@
                 </div>
 
                 <div class="form-group mb-4">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required data-email-input>
+                    <label for="tel">Telefone / Celular:</label>
+                    <input type="tel" class="form-control" id="tel" name="tel" required data-tel-input>
                 </div>
 
                 <div class="form-group mb-4">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required
-                        data-description-input></textarea>
+                    <label for="city">Cidade - Estado:</label>
+                    <input type="text" class="form-control" id="city" name="city" required data-city-input>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="conta">Valor da conta de energia:</label>
+                    <input type="number" class="form-control" id="conta" name="conta" required data-conta-input>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="telhado">Tipo de Telhado:</label>
+                    <select class="form-control" id="telhado" name="telhado" required data-telhado-input>
+                        <option value="Colonial/Cerâmico">Colonial/Cerâmico</option>
+                        <option value="Metálico/Zinco">Metálico/Zinco</option>
+                        <option value="Fibrocimento (Ethernit)">Fibrocimento (Ethernit)</option>
+                        <option value="Laje">Laje</option>
+                        <option value="Solo">Solo</option>
+                    </select>
                 </div>
 
                 <button type="submit" class="btn btn-primary mb-4" data-submit-button>Enviar</button>
